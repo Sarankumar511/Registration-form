@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        table{
+            width:100%;
+            height:100%;
+           
+        }
+        fieldset{
+            margin-top: 150px;
+            margin-left: 250px;
+            width:70%;
+            background-color: rgb(255, 170, 0);
+        }
+        .tab{
+            border: 1px black dashed;
+            text-align: center;
+            background-color: #00ffff;
+        }
+        .tab1 th,td{
+            padding-right: 50px;
+            padding-bottom: 20px;
+            padding-left: 50px;
+        }
+        textarea
+        {
+            width: 500px;
+            height: 100px;
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+  <main>
+     <form>
+         <fieldset>
+              <table class="tab1">
+                   <legend> Registration Form</legend>
+                   <tr>
+                       <th> <label for="First Name">First Name</label></th>
+                       <td><input type="text" name="First Name" id="First Name" placeholder="abcde" size="50" maxlength="50" required> (Max 50 Characters only)</td>
+                   </tr>
+                   <tr>
+                       <th> <label for="Last Name">Last Name</label></th>
+                       <td><input type="text" name="Last Name" id="Last Name" placeholder="abcde" size="50" maxlength="50" required> (Max 50 Characters only)</td>
+                   </tr>
+                   <tr>
+                       <th> <label for="Email ID">Email ID</label></th>
+                       <td><input type="email" name="Email ID" id="Email ID" placeholder="abc@mail" size="50" maxlength="50" required> </td>
+                   </tr>
+                   <tr>
+                    <th> <label for="Mobile Number">Mobile Number</label></th>
+                    <td><input type="tel" name="Mobile Number" id="Mobile Number" placeholder="1234567890" size="50" maxlength="50" required> </td>
+                </tr>
+                <tr>
+                    <th> <label for="Gender">Gender</label></th>
+                    <td><input type="radio" name="Gender" id="Gender" value="Male">Male <input type="radio" name="Gender" id="Gender" value="Female">Female </td>
+                </tr>
+                <tr>
+                    <th> <label for="Date of Birth(DOB)">Date of Birth(DOB)</label></th>
+                    <td><input type="date" name="Date of Birth(DOB)" id="Date of Birth(DOB)"required></td>
+                </tr>
+                <tr>
+                    <th> <label for="Address">Address</label></th>
+                    <td><textarea size="1000" maxlength="1000""></textarea></td>
+                </tr>
+                <tr>
+                    <th> <label for="City">City</label></th>
+                    <td><input type="text" name="City" id="City" placeholder="New Delhi" size="25" maxlength="25" required> (Max 50 Characters only)</td>
+                </tr>
+                <tr>
+                    <th> <label for="Pin Code">Pin Code</label></th>
+                    <td><input type="text" name="Pin Code" id="Pin Code" placeholder="123456" size="25" maxlength="25" required> (Max 50 Characters only)</td>
+                </tr>
+                <tr>
+                    <th> <label for="State">State</label></th>
+                    <td><input type="text" name="State" id="State" placeholder="Delhi" size="25" maxlength="25" required> (Max 50 Characters only)</td>
+                </tr>
+                <tr>
+                    <th> <label for="Country">Country</label></th>
+                    <td><input type="text" name="Country" id="Country" placeholder="India" size="25" maxlength="25" required></td>
+                </tr>
+                <tr>
+                    <th> <label for="Hobbies">Hobbies</label></th>
+                    <td>
+                        <input type="checkbox" name="Hobbies" id="Hobbies" value="Travelling">Travelling
+                        <input type="checkbox" name="Hobbies" id="Hobbies" value="Singing">Singing 
+                        <input type="checkbox" name="Hobbies" id="Hobbies" value="Dancing">Dancing 
+                        <input type="checkbox" name="Hobbies" id="Hobbies" value="Cooking">Cooking 
+                        <input type="checkbox" name="Hobbies" id="Hobbies" value="Others">Others
+                        <input type="text" name="Hobbies" id="Hobbies" size="50" maxlength="50">(Max 50 Characters only)
+                    </td>
+                </tr>
+                <tr>
+                    <th> <label for="Qualification">Qualification</label></th>
+                        <td>
+                           <table class="tab">
+                              <tr>
+                                 <th> SI.NO</th>
+                                 <th> Examination</th>
+                                 <th> Board</th>
+                                 <th> Percentage</th>
+                                 <th>Years of Passing</th>
+                              </tr>
+                              <tr>
+                                <th>1</th>
+                                <th>Class X</th>
+                                <td>
+                                    <label for="10th Board "></label>
+                                    <input type="text" name="10th Board" id="10th Board">
+                                </td>
+                                <td>
+                                    <label for="10th Percentage"></label>
+                                    <input type="text" name="10th Percentage" id="10th Percentage">
+                                </td>
+                                <td>
+                                    <label for="10th Year of Passing"></label>
+                                    <input type="text" name="10th Year of Passing" id="10th Year of Passing">
+                                </td>
+                             </tr>
+                             <tr>
+                                <th>2</th>
+                                <th>Class XII</th>
+                                <td>
+                                    <label for="12th Board "></label>
+                                    <input type="text" name="12th Board" id="12th Board">
+                                </td>
+                                <td>
+                                    <label for="12th Percentage"></label>
+                                    <input type="text" name="12th Percentage" id="12th Percentage">
+                                </td>
+                                <td>
+                                    <label for="12th Year of Passing"></label>
+                                    <input type="text" name="12th Year of Passing" id="12th Year of Passing">
+                                </td>
+                             </tr>
+                             <tr>
+                                <th>3</th>
+                                <th>UG Graduation</th>
+                                <td>
+                                    <label for="UG Graduation Board "></label>
+                                    <input type="text" name="UG Graduation Board" id="UG Graduation Board">
+                                </td>
+                                <td>
+                                    <label for="UG Graduation Percentage"></label>
+                                    <input type="text" name="UG Graduation Percentage" id="UG Graduation Percentage">
+                                </td>
+                                <td>
+                                    <label for="UG Graduation Year of Passing"></label>
+                                    <input type="text" name="UG Graduation Year of Passing" id="UG Graduation Year of Passing">
+                                </td>
+                             </tr>
+                             <tr>
+                                <th>4</th>
+                                <th>PG Graduation</th>
+                                <td>
+                                    <label for="PG Graduation Board "></label>
+                                    <input type="text" name="PG Graduation Board" id="PG Graduation Board">
+                                </td>
+                                <td>
+                                    <label for="PG Graduation Percentage"></label>
+                                    <input type="text" name="PG Graduation Percentage" id="PG Graduation Percentage">
+                                </td>
+                                <td>
+                                    <label for="PG Graduation Year of Passing"></label>
+                                    <input type="text" name="PG Graduation Year of Passing" id="PG Graduation Year of Passing">
+                                </td>
+                             </tr>
+                             <tr>
+                                <th>5</th>
+                                <th>Phd</th>
+                                <td>
+                                    <label for="Phd Board "></label>
+                                    <input type="text" name="Phd Board" id="Phd Board">
+                                </td>
+                                <td>
+                                    <label for="Phd Percentage"></label>
+                                    <input type="text" name="Phd Percentage" id="Phd Percentage">
+                                </td>
+                                <td>
+                                    <label for="Phd Year of Passing"></label>
+                                    <input type="text" name="Phd Year of Passing" id="Phd Year of Passing">
+                                </td>
+                             </tr>
+                    </table>
+                </td>
+                </tr>
+                <tr>
+                    <th rowspan="4"><label for="Courses">Courses</label></th>
+                    <td>
+                        <input type="radio" name="Courses" id="Courses" value="BCA">BCA 
+                    </td>
+                </tr>
+                 <tr>
+                        <td>
+                            <input type="radio" name="Courses" id="Courses" value="B.com">B.com 
+                        </td>
+                 </tr>
+                 <tr>
+                    <td>
+                        <input type="radio" name="Courses" id="Courses" value="BSC">BSC 
+                    </td>
+             </tr>
+             <tr>
+                <td>
+                    <input type="radio" name="Courses" id="Courses" value="BA">BA 
+                </td>
+              </tr>
+              <tr>
+                <th colspan="2" >
+                    <input type="submit" name="submit" id="submit">
+                </th>
+              </tr>
+                 
+               </table>
+        </fieldset>
+     </form>
+ </main>
+</body>
+</html>
